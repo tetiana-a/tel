@@ -3,102 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список номерів для SMS</title>
+    <title>Список номерів для SMS та дзвінків у римському стилі</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            padding: 20px;
+            background: url('https://www.transparenttextures.com/patterns/white-marble.png') repeat;
+            background-color: #f5f5f5;
+            color: #333;
         }
         h1 {
             text-align: center;
-            color: #333;
+            font-size: 2.5em;
+            color: #8B0000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
         }
         .phone-list {
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background: linear-gradient(to bottom, #f5e6cc, #f5f5dc);
+            border: 5px solid #d4af37;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
-        .phone-list a {
-            display: block;
-            padding: 10px;
-            margin: 5px 0;
+        .phone-list ol {
+            padding-left: 40px;
+            list-style-type: upper-roman;
+        }
+        .phone-list li {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .phone-number {
+            font-size: 1.1em;
+            margin-right: 10px;
+        }
+        .phone-actions a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 0 5px;
             text-decoration: none;
-            color: #007bff;
-            border: 1px solid #007bff;
+            color: #8B0000;
+            background-color: #fff;
+            border: 2px solid #d4af37;
             border-radius: 5px;
-            text-align: center;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
         }
-        .phone-list a:hover {
-            background-color: #007bff;
-            color: white;
+        .phone-actions a:hover {
+            background-color: #d4af37;
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+        }
+        .sms-btn { border-color: #006400; }
+        .sms-btn:hover { background-color: #006400; }
+        .call-btn { border-color: #800000; }
+        .call-btn:hover { background-color: #800000; }
+        @keyframes scrollUnroll {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .phone-list {
+            animation: scrollUnroll 1.5s ease-out forwards;
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <h1>Список номерів для відправки SMS</h1>
+    <h1>Список номерів для SMS та дзвінків</h1>
     <div class="phone-list">
-        <a href="sms:+420737171674">+420737171674</a>
-        <a href="sms:+420739081223">+420739081223</a>
-        <a href="sms:+420607083983">+420607083983</a>
-        <a href="sms:+420603786505">+420603786505</a>
-        <a href="sms:+420737230954">+420737230954</a>
-        <a href="sms:+420222580773">+420222580773</a>
-        <a href="sms:+420739661942">+420739661942</a>
-        <a href="sms:+420517735352">+420517735352</a>
-        <a href="sms:+420736027524">+420736027524</a>
-        <a href="sms:+420730779588">+420730779588</a>
-        <a href="sms:+420777288779">+420777288779</a>
-        <a href="sms:+420774866558">+420774866558</a>
-        <a href="sms:+420511715581">+420511715581</a>
-        <a href="sms:+420774344134">+420774344134</a>
-        <a href="sms:+420602968857">+420602968857</a>
-        <a href="sms:+420602225564">+420602225564</a>
-        <a href="sms:+420775745141">+420775745141</a>
-        <a href="sms:+420602754375">+420602754375</a>
-        <a href="sms:+420704766350">+420704766350</a>
-        <a href="sms:+420725113116">+420725113116</a>
-        <a href="sms:+420777230162">+420777230162</a>
-        <a href="sms:+420602111723">+420602111723</a>
-        <a href="sms:+420602730688">+420602730688</a>
-        <a href="sms:+420737300910">+420737300910</a>
-        <a href="sms:+420608983984">+420608983984</a>
-        <a href="sms:+420702183331">+420702183331</a>
-        <a href="sms:+420737852758">+420737852758</a>
-        <a href="sms:+420602151504">+420602151504</a>
-        <a href="sms:+420721594091">+420721594091</a>
-        <a href="sms:+420732072194">+420732072194</a>
-        <a href="sms:+420745017191">+420745017191</a>
-        <a href="sms:+420722938922">+420722938922</a>
-        <a href="sms:+420543655511">+420543655511</a>
-        <a href="sms:+420724027382">+420724027382</a>
-        <a href="sms:+420774344434">+420774344434</a>
-        <a href="sms:+420530509090">+420530509090</a>
-        <a href="sms:+420725878758">+420725878758</a>
-        <a href="sms:+420774757024">+420774757024</a>
-        <a href="sms:+420606760950">+420606760950</a>
-        <a href="sms:+420725992790">+420725992790</a>
-        <a href="sms:+420519324958">+420519324958</a>
-        <a href="sms:+421608911009">+421608911009</a>
-        <a href="sms:+420774210133">+420774210133</a>
-        <a href="sms:+420774868558">+420774868558</a>
-        <a href="sms:+420603301738">+420603301738</a>
-        <a href="sms:+420602366832">+420602366832</a>
-        <a href="sms:+420545219005">+420545219005</a>
-        <a href="sms:+420725741191">+420725741191</a>
-        <a href="sms:+420548217412">+420548217412</a>
-        <a href="sms:+420543213061">+420543213061</a>
-        <a href="sms:+420545210066">+420545210066</a>
-        <a href="sms:+420548216250">+420548216250</a>
-        <a href="sms:+420602544085">+420602544085</a>
-        <a href="sms:+420532176381">+420532176381</a>
-        <a href="sms:+420543253007">+420543253007</a>
-        <a href="sms:+420548426411">+420548426411</a>
-        <a href="sms:+420549211302">+420549211302</a>
-        <a href="sms:+420777336740">+420777336740</a>
+        <ol>
+            <li>
+                <span class="phone-number">+420543655511</span>
+                <div class="phone-actions">
+                    <a href="sms:+420543655511" class="sms-btn">SMS</a>
+                    <a href="tel:+420543655511" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420724027382</span>
+                <div class="phone-actions">
+                    <a href="sms:+420724027382" class="sms-btn">SMS</a>
+                    <a href="tel:+420724027382" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420774344434</span>
+                <div class="phone-actions">
+                    <a href="sms:+420774344434" class="sms-btn">SMS</a>
+                    <a href="tel:+420774344434" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420530509090</span>
+                <div class="phone-actions">
+                    <a href="sms:+420530509090" class="sms-btn">SMS</a>
+                    <a href="tel:+420530509090" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420725878758</span>
+                <div class="phone-actions">
+                    <a href="sms:+420725878758" class="sms-btn">SMS</a>
+                    <a href="tel:+420725878758" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420774757024</span>
+                <div class="phone-actions">
+                    <a href="sms:+420774757024" class="sms-btn">SMS</a>
+                    <a href="tel:+420774757024" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420606760950</span>
+                <div class="phone-actions">
+                    <a href="sms:+420606760950" class="sms-btn">SMS</a>
+                    <a href="tel:+420606760950" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420725992790</span>
+                <div class="phone-actions">
+                    <a href="sms:+420725992790" class="sms-btn">SMS</a>
+                    <a href="tel:+420725992790" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420519324958</span>
+                <div class="phone-actions">
+                    <a href="sms:+420519324958" class="sms-btn">SMS</a>
+                    <a href="tel:+420519324958" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+421608911009</span>
+                <div class="phone-actions">
+                    <a href="sms:+421608911009" class="sms-btn">SMS</a>
+                    <a href="tel:+421608911009" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420774210133</span>
+                <div class="phone-actions">
+                    <a href="sms:+420774210133" class="sms-btn">SMS</a>
+                    <a href="tel:+420774210133" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420774868558</span>
+                <div class="phone-actions">
+                    <a href="sms:+420774868558" class="sms-btn">SMS</a>
+                    <a href="tel:+420774868558" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420603301738</span>
+                <div class="phone-actions">
+                    <a href="sms:+420603301738" class="sms-btn">SMS</a>
+                    <a href="tel:+420603301738" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420602366832</span>
+                <div class="phone-actions">
+                    <a href="sms:+420602366832" class="sms-btn">SMS</a>
+                    <a href="tel:+420602366832" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420545219005</span>
+                <div class="phone-actions">
+                    <a href="sms:+420545219005" class="sms-btn">SMS</a>
+                    <a href="tel:+420545219005" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420725741191</span>
+                <div class="phone-actions">
+                    <a href="sms:+420725741191" class="sms-btn">SMS</a>
+                    <a href="tel:+420725741191" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420548217412</span>
+                <div class="phone-actions">
+                    <a href="sms:+420548217412" class="sms-btn">SMS</a>
+                    <a href="tel:+420548217412" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420543213061</span>
+                <div class="phone-actions">
+                    <a href="sms:+420543213061" class="sms-btn">SMS</a>
+                    <a href="tel:+420543213061" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420545210066</span>
+                <div class="phone-actions">
+                    <a href="sms:+420545210066" class="sms-btn">SMS</a>
+                    <a href="tel:+420545210066" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420548216250</span>
+                <div class="phone-actions">
+                    <a href="sms:+420548216250" class="sms-btn">SMS</a>
+                    <a href="tel:+420548216250" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420602544085</span>
+                <div class="phone-actions">
+                    <a href="sms:+420602544085" class="sms-btn">SMS</a>
+                    <a href="tel:+420602544085" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420532176381</span>
+                <div class="phone-actions">
+                    <a href="sms:+420532176381" class="sms-btn">SMS</a>
+                    <a href="tel:+420532176381" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420543253007</span>
+                <div class="phone-actions">
+                    <a href="sms:+420543253007" class="sms-btn">SMS</a>
+                    <a href="tel:+420543253007" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420548426411</span>
+                <div class="phone-actions">
+                    <a href="sms:+420548426411" class="sms-btn">SMS</a>
+                    <a href="tel:+420548426411" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420549211302</span>
+                <div class="phone-actions">
+                    <a href="sms:+420549211302" class="sms-btn">SMS</a>
+                    <a href="tel:+420549211302" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+            <li>
+                <span class="phone-number">+420777336740</span>
+                <div class="phone-actions">
+                    <a href="sms:+420777336740" class="sms-btn">SMS</a>
+                    <a href="tel:+420777336740" class="call-btn">Дзвінок</a>
+                </div>
+            </li>
+        </ol>
     </div>
+
+    <audio controls autoplay loop>
+        <source src="https://www.musopen.org/planlist/38237?embed=1" type="audio/mpeg">
+        Ваш браузер не підтримує тег audio.
+    </audio>
 </body>
 </html>
